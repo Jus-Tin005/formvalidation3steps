@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Step Form Validation</title>
+        <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+        <div class="container">
+                <div id="dot-box" class="dot-box">
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                        <span class="dot"></span>
+                </div>
+
+                <form action="" method="" id="form">
+                        <h1>Register With Us</h1>
+
+                        <div class="pages">
+                                <label for="email">Security :</label>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Enter Email"  autocomplete="off">
+                                <input type="password" name="passcode" id="passcode" class="form-control" placeholder="Enter passcode"  autocomplete="off">
+                        </div>
+
+                        <div class="pages">
+                                <label for="firstname">Personal Info :</label>
+                                <input type="text" name="firstname" id="firstname" class="form-control" placeholder="Enter first name"  autocomplete="off">
+                                <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Enter last name"  autocomplete="off">
+                        </div>
+
+                        <div class="pages">
+                                <label for="dob">Date Of Birth  :</label>
+                                <input type="date" name="dob" id="dob" class="form-control">
+                        </div>
+
+                        <div class="pages">
+                                <label for="phone">Contact Info :</label>
+                                <input type="text" name="phone" id="phone" class="form-control" placeholder="Enter phone number" autocomplete="off">
+                                <input type="text" name="address" id="address" class="form-control" placeholder="Enter address"  autocomplete="off">
+                        </div>
+
+                        <div class="d-flex">
+                                <button type="button" id="prev-btn" class="btn" onclick="goNow(-1)">Previous</button>
+                                <button type="button" id="next-btn"  class="btn" onclick="goNow(1)">Next</button>
+                        </div>
+
+                </form>
+
+                <div id="result-container"></div>
+
+        </div>
+
+
+        <script src="./app.js"></script>
+</body>
+</html>
